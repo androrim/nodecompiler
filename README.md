@@ -7,10 +7,10 @@ PS.: Node Compiler run only JavaScript files. Other files is copied.
 
 ## Install
 In your projec
-`$ npm install nodecompiler --save-dev`
+`$ npm i @androrim/nodecompiler --save-dev`
 
 Or globally
-`$ npm install -g nodecompiler`
+`$ npm install -g @androrim/nodecompiler`
 
 ## Configure 
 In root folder of your project, create a nodecompiler.json.
@@ -26,18 +26,14 @@ Example:
                 "./public",
                 "./config"
             ],
-            "ignore": [
-            ]
+            "ignore": []
         },
         "copy": {
             "items": [
                 "./database",
                 "./resources",
-                "./.env",
                 "./main.js",
-                "./index.js",
                 "./package.json",
-                "./spinner.html"
             ],
             "ignore": [],
             "overwrite": {

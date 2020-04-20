@@ -1,5 +1,5 @@
 {
-  "name": "nodecompiler",
+  "name": "@androrim/nodecompiler",
   "version": "1.0.0",
   "description": "Compile you Javascript project",
   "main": "./bin/index.js",
