@@ -1,0 +1,32 @@
+{
+  "name": "nodecompiler",
+  "version": "1.0.0",
+  "description": "Compile you Javascript project",
+  "main": "./bin/index.js",
+  "bin": {
+    "nodecompiler": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/androrim/nodecompiler.git"
+  },
+  "keywords": [
+    "Node",
+    "Compiler"
+  ],
+  "author": "Lendro de Amorim <http://androrim.github.io/>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/androrim/nodecompiler/issues"
+  },
+  "homepage": "https://github.com/androrim/nodecompiler#readme",
+  "dependencies": {
+    "bytenode": "^1.1.6",
+    "comments-parser": "^1.0.0",
+    "fs-extra": "^9.0.0",
+    "path": "^0.12.7"
+  }
+}
