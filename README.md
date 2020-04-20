@@ -26,18 +26,14 @@ Example:
                 "./public",
                 "./config"
             ],
-            "ignore": [
-            ]
+            "ignore": []
         },
         "copy": {
             "items": [
                 "./database",
                 "./resources",
-                "./.env",
                 "./main.js",
-                "./index.js",
                 "./package.json",
-                "./spinner.html"
             ],
             "ignore": [],
             "overwrite": {
