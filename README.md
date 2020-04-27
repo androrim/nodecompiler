@@ -1,26 +1,35 @@
 # Node Compiler
-Node Compiler is powered with [bytenode](https://github.com/OsamaAbbas/bytenode "bytenode").
 
-Compile your Node JavaScript project. Is fast an simple.
+Node Compiler is powered by [bytenode](https://github.com/OsamaAbbas/bytenode "bytenode").
 
-PS.: Node Compiler run only JavaScript files. Other files is copied.
+Compile your Node JavaScript. It is fast and simple.
+
+PS.: Node Compiler runs only on JavaScript files, other files will be copied.
 
 ## Install
-In your projec
-`$ npm i @androrim/nodecompiler --save-dev`
 
-Or globally
-`$ npm install -g @androrim/nodecompiler`
+In your project, run:
 
-## Configure 
-In root folder of your project, create a nodecompiler.json.
+NPM: `$ npm i @androrim/nodecompiler --save-dev`
+
+Yarn: `$ yarn add @androrim/nodecompiler -D`
+
+Or globally:
+
+NPM: `$ npm install -g @androrim/nodecompiler`
+
+Yarn: `$ yarn global add @androrim/nodecompiler`
+
+## Configure
+
+In the root folder of your project, create a nodecompiler.json.
 
 Example:
 
     {
-        "to": "../NodeCompiler", // Absolute or relative path to compliled result
+        "to": "../NodeCompiler", // Absolute or relative path to compiled result
         "compile": {
-            "items": [ 
+            "items": [
                 "./app",
                 "./bootstrap",
                 "./public",
@@ -53,9 +62,26 @@ Example:
     }
 
 ## Run Node Compiler
-In root folder execute Node Compiler.
+
+If Node Compiler is installed globally, run in the root folder:
 
 `$ nodecompiler`
 
-## Details 
-Annotations of JavaScript files will be extractd an save in FileName.map in same origin file folder.
+If it is installed as local dependency, create a new script entry on your package.json like:
+```
+...
+"scripts" : {
+    ...other commands
+    "nodecompiler" : "nodecompiler"
+}
+```
+
+And then run:
+
+NPM: `$ npm run nodecompiler`
+
+Yarn: `$ yarn nodecompiler`
+
+## Details
+
+Annotations of JavaScript files will be extracted and saved in FileName.map in same origin file folder.
